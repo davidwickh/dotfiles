@@ -1,7 +1,7 @@
 # dotfiles
 This repo contains all dotfile configurations, as well as setup scripts required to install dependancies.
 
-The underlying technology used to is (GNU Stow)[https://www.gnu.org/software/stow/manual/stow.html] used as a symlink farm manager to create allias for each dotfile.
+The underlying technology intended to be used along with this repo is [GNU Stow](https://www.gnu.org/software/stow/manual/stow.html) used as a symlink farm manager to create allias for each dotfile.
 
 ## Installation
 
