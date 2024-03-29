@@ -26,3 +26,12 @@ All setup scripts are stored in the `scripts` directorty. All setup scripts can 
 ```shell
 bash ./scripts/setup_all.sh
 ```
+
+### Run GNU Stow
+Go to the directory where the repo has been cloned to (by default this should be `.dotfiles` and run the following command:
+
+```shell
+stow .
+```
+
+If there are any config dotfiles that already exsit in your home directory, then GNU stow may fail. To correct this, save a copy of the original config file and delete the orignal. Go back to the `.dotfile` directory and run the above command again.
