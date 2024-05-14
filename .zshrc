@@ -176,4 +176,4 @@ eval "$(starship init zsh)"
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 # Created by `pipx` on 2024-02-16 11:01:56
-export PATH="$PATH:/home/david/.local/bin"
+export PATH="$PATH:/home/$USERNAME/.local/bin"
