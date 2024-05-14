@@ -17,7 +17,7 @@ This configuration has the following requirements:
 These can be installed through the following command:
 
 ```shell
-base ./scripts/requirements/install_requirements.sh
+bash ./scripts/requirements/install_requirements.sh
 ```
 
 ### Run all setup scripts
