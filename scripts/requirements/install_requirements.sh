@@ -9,8 +9,10 @@ then
     sudo apt upgrade -y
     echo "Installing curl, git, zsh, and vim"
     sudo apt install -y curl git zsh vim
-    (echo; echo 'eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"') >> /home/david/.bashrc
+    (echo; echo 'eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"') >> /home/$USERNAME/.bashrc
     eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+    echo "Installing stow"
+    brew install stow
 else
     echo "Mac OS detected"
     echo "Installing curl, git, zsh and vim"

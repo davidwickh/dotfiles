@@ -154,6 +154,9 @@ alias la='ls -a'
 alias lla='ls -la'
 alias lt='ls --tree'
 
+# Nvim Profiles
+alias astro="NVIM_APPNAME=astronvim nvim"
+
 function dipa(){
   docker rm -v $(docker ps -a -q -f status=exited);
   docker volume rm $(docker volume ls -qf dangling=true);
@@ -176,4 +179,4 @@ eval "$(starship init zsh)"
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 # Created by `pipx` on 2024-02-16 11:01:56
-export PATH="$PATH:/home/david/.local/bin"
+export PATH="$PATH:/home/$USERNAME/.local/bin"
