@@ -8,6 +8,7 @@ local lspconfig = require "lspconfig"
 local servers = {
   html = {},
   cssls = {},
+  clojure_lsp = {},
   pyright = {
     settings = {
       python = {

@@ -8,6 +8,7 @@ return {
   },
 
   -- These are some examples, uncomment them if you want to see them work!
+  -- LSP
   {
     "neovim/nvim-lspconfig",
     config = function()
@@ -15,7 +16,6 @@ return {
       require "configs.lspconfig"
     end,
   },
-
   {
   	"williamboman/mason.nvim",
   	opts = {
@@ -25,7 +25,15 @@ return {
   		},
   	},
   },
+  {
+    "williamboman/mason-lspconfig.nvim",
+    lazy = false,
+    opts = {
+      auto_install = true,
+    },
+  },
 
+  -- TreeSitter
   {
   	"nvim-treesitter/nvim-treesitter",
   	opts = {
@@ -51,7 +59,7 @@ return {
     },
     keys = {
       { "<leader>lg", "<cmd>LazyGit<cr>", desc = "LazyGit"}
-    }
+    },
   },
 
 
