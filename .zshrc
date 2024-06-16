@@ -157,6 +157,9 @@ alias lt='ls --tree'
 # Nvim Profiles
 alias astro="NVIM_APPNAME=astronvim nvim"
 
+# Custom Aliases
+alias config='cd ~/.config'
+
 function dipa(){
   docker rm -v $(docker ps -a -q -f status=exited);
   docker volume rm $(docker volume ls -qf dangling=true);
